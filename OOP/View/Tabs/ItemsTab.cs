@@ -43,7 +43,7 @@ namespace OOP.View.Tabs
         }
 
         /// <summary>
-        /// Метод добавлет товар в список.
+        /// Метод добавляет товар в список.
         /// </summary>
         private void AddItemButton_Click(object sender, EventArgs e)
         {
@@ -80,13 +80,18 @@ namespace OOP.View.Tabs
         /// </summary>
         private void СostItemTextBox_TextChanged(object sender, EventArgs e)
         {
+            if (costItemTextBox.Text == string.Empty)
+            {
+                costItemTextBox.BackColor = Color.White;
+                return;
+            }
             try
             {
                 OOP.Services.ValueValidator.AssertValueInRange(
                     double.Parse(costItemTextBox.Text),
                     0,
                     100000,
-                    "Цена не может иметь данное значение. Ёе диапазон от 0 до 100000"
+                    "Цена не может иметь данное значение. Диапазон от 0 до 100000"
                     );
                 costItemTextBox.BackColor = Color.White;
             }
@@ -147,7 +152,7 @@ namespace OOP.View.Tabs
         }
 
         /// <summary>
-        /// Заполянет поля из значений класса.
+        /// Заполняет поля из значений класса.
         /// </summary>
         private void FillingInTheProductField(Model.Item current)
         {

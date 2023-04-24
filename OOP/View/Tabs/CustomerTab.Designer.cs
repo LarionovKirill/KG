@@ -142,6 +142,7 @@ namespace OOP.View
             this.customerListBox.Name = "customerListBox";
             this.customerListBox.Size = new System.Drawing.Size(289, 452);
             this.customerListBox.TabIndex = 26;
+            this.customerListBox.SelectedIndexChanged += new System.EventHandler(this.CustomerListBox_SelectedIndexChanged);
             // 
             // CustomerTab
             // 

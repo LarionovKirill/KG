@@ -43,8 +43,11 @@ namespace OOP.View
         /// </summary>
         private void CustomerListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var index = customerListBox.SelectedIndex;
-            //FillFieldsOfCustomer(Customers[index]);
+            if (customerListBox.SelectedIndex>=0)
+            {
+                var index = customerListBox.SelectedIndex;
+                FillFieldsOfCustomer(Customers[index]);
+            }
         }
 
         /// <summary>
@@ -65,11 +68,11 @@ namespace OOP.View
         {
             try
             {
-               /* Customers.Add(new Model.Customer(
+                Customers.Add(new Model.Customer(
                     fullNameTextBox.Text,
                     addressTextBox.Text
-                    ));*/
-                //customerListBox.Items.Add($"Пользователь : {Customers.Last().Id}");
+                    ));
+                customerListBox.Items.Add($"Пользователь : {Customers.Last().Id}");
             }
             catch
             {
@@ -85,7 +88,7 @@ namespace OOP.View
             if (customerListBox.SelectedIndex >= 0)
             {
                 var index = customerListBox.SelectedIndex;
-                //Customers.RemoveAt(index);
+                Customers.RemoveAt(index);
                 customerListBox.Items.RemoveAt(index);
             }
         }

@@ -54,7 +54,7 @@ namespace OOP.View.Tabs
                     descriptionItemTextBox.Text,
                     double.Parse(costItemTextBox.Text)
                     ));
-                itemListBox.Items.Add($"Товар :{Items.Last().Id}");
+                itemListBox.Items.Add($"Товар : {Items.Last().Id}");
             }
             catch
             {
@@ -139,8 +139,11 @@ namespace OOP.View.Tabs
         /// </summary>
         private void ItemListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var index = itemListBox.SelectedIndex;
-            FillingInTheProductField(Items[index]);
+            if (itemListBox.SelectedIndex >= 0)
+            {
+                var index = itemListBox.SelectedIndex;
+                FillingInTheProductField(Items[index]);
+            }
         }
 
         /// <summary>

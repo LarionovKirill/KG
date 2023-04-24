@@ -50,7 +50,7 @@ namespace OOP.View.Tabs
             this.itemListBox.ItemHeight = 16;
             this.itemListBox.Location = new System.Drawing.Point(12, 29);
             this.itemListBox.Name = "itemListBox";
-            this.itemListBox.Size = new System.Drawing.Size(335, 452);
+            this.itemListBox.Size = new System.Drawing.Size(289, 452);
             this.itemListBox.TabIndex = 0;
             this.itemListBox.SelectedIndexChanged += new System.EventHandler(this.ItemListBox_SelectedIndexChanged);
             // 
@@ -66,7 +66,7 @@ namespace OOP.View.Tabs
             // 
             // descriptionItemTextBox
             // 
-            this.descriptionItemTextBox.Location = new System.Drawing.Point(356, 269);
+            this.descriptionItemTextBox.Location = new System.Drawing.Point(320, 271);
             this.descriptionItemTextBox.Multiline = true;
             this.descriptionItemTextBox.Name = "descriptionItemTextBox";
             this.descriptionItemTextBox.Size = new System.Drawing.Size(377, 119);
@@ -75,7 +75,7 @@ namespace OOP.View.Tabs
             // 
             // nameItemTextBox
             // 
-            this.nameItemTextBox.Location = new System.Drawing.Point(356, 137);
+            this.nameItemTextBox.Location = new System.Drawing.Point(320, 139);
             this.nameItemTextBox.Multiline = true;
             this.nameItemTextBox.Name = "nameItemTextBox";
             this.nameItemTextBox.Size = new System.Drawing.Size(377, 96);
@@ -84,7 +84,7 @@ namespace OOP.View.Tabs
             // 
             // costItemTextBox
             // 
-            this.costItemTextBox.Location = new System.Drawing.Point(399, 82);
+            this.costItemTextBox.Location = new System.Drawing.Point(363, 84);
             this.costItemTextBox.Name = "costItemTextBox";
             this.costItemTextBox.Size = new System.Drawing.Size(129, 22);
             this.costItemTextBox.TabIndex = 5;
@@ -92,7 +92,7 @@ namespace OOP.View.Tabs
             // 
             // idItemTextBox
             // 
-            this.idItemTextBox.Location = new System.Drawing.Point(399, 47);
+            this.idItemTextBox.Location = new System.Drawing.Point(363, 49);
             this.idItemTextBox.Name = "idItemTextBox";
             this.idItemTextBox.ReadOnly = true;
             this.idItemTextBox.Size = new System.Drawing.Size(129, 22);
@@ -101,7 +101,7 @@ namespace OOP.View.Tabs
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(353, 50);
+            this.idLabel.Location = new System.Drawing.Point(317, 52);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(25, 17);
             this.idLabel.TabIndex = 7;
@@ -110,7 +110,7 @@ namespace OOP.View.Tabs
             // costLabel
             // 
             this.costLabel.AutoSize = true;
-            this.costLabel.Location = new System.Drawing.Point(353, 85);
+            this.costLabel.Location = new System.Drawing.Point(317, 87);
             this.costLabel.Name = "costLabel";
             this.costLabel.Size = new System.Drawing.Size(40, 17);
             this.costLabel.TabIndex = 8;
@@ -119,7 +119,7 @@ namespace OOP.View.Tabs
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(353, 117);
+            this.nameLabel.Location = new System.Drawing.Point(317, 119);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(49, 17);
             this.nameLabel.TabIndex = 9;
@@ -128,7 +128,7 @@ namespace OOP.View.Tabs
             // descriptionLabel
             // 
             this.descriptionLabel.AutoSize = true;
-            this.descriptionLabel.Location = new System.Drawing.Point(353, 249);
+            this.descriptionLabel.Location = new System.Drawing.Point(317, 251);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(83, 17);
             this.descriptionLabel.TabIndex = 10;
@@ -148,7 +148,7 @@ namespace OOP.View.Tabs
             // 
             this.selectedItemLabel.AutoSize = true;
             this.selectedItemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.selectedItemLabel.Location = new System.Drawing.Point(353, 9);
+            this.selectedItemLabel.Location = new System.Drawing.Point(317, 11);
             this.selectedItemLabel.Name = "selectedItemLabel";
             this.selectedItemLabel.Size = new System.Drawing.Size(111, 17);
             this.selectedItemLabel.TabIndex = 12;
@@ -182,7 +182,7 @@ namespace OOP.View.Tabs
             this.Controls.Add(this.addItemButton);
             this.Controls.Add(this.itemListBox);
             this.Name = "ItemsTab";
-            this.Size = new System.Drawing.Size(745, 553);
+            this.Size = new System.Drawing.Size(719, 553);
             this.ResumeLayout(false);
             this.PerformLayout();
 

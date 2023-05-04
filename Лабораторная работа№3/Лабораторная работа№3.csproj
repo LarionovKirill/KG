@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19E2CE09-9655-4D5B-85B5-921E7D7B648A}</ProjectGuid>
+    <ProjectGuid>{9F88388B-887F-46F2-9665-5A41EDFAA526}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OOP</RootNamespace>
-    <AssemblyName>OOP</AssemblyName>
+    <RootNamespace>Лабораторная_работа_3</RootNamespace>
+    <AssemblyName>Лабораторная работа№3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,30 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\IdGenerator.cs" />
-    <Compile Include="View\Tabs\CustomerTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\Tabs\CustomerTab.Designer.cs">
-      <DependentUpon>CustomerTab.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\MainForm.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\MainForm.Designer.cs">
+    <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Item.cs" />
+    <Compile Include="Левое задание.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Левое задание.Designer.cs">
+      <DependentUpon>Левое задание.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ValueValidator.cs" />
-    <Compile Include="View\Tabs\ItemsTab.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Task11.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Tabs\ItemsTab.Designer.cs">
-      <DependentUpon>ItemsTab.cs</DependentUpon>
+    <Compile Include="Task11.Designer.cs">
+      <DependentUpon>Task11.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Левое задание.resx">
+      <DependentUpon>Левое задание.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,15 +81,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Tabs\CustomerTab.resx">
-      <DependentUpon>CustomerTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Tabs\ItemsTab.resx">
-      <DependentUpon>ItemsTab.cs</DependentUpon>
+    <EmbeddedResource Include="Task11.resx">
+      <DependentUpon>Task11.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,9 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Diagrams\Uml лаба 1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

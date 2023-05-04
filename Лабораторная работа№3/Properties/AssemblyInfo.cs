@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("OOP")]
+[assembly: AssemblyTitle("Лабораторная работа№3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OOP")]
+[assembly: AssemblyProduct("Лабораторная работа№3")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("19e2ce09-9655-4d5b-85b5-921e7d7b648a")]
+[assembly: Guid("9f88388b-887f-46f2-9665-5a41edfaa526")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
